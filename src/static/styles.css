@@ -159,12 +159,25 @@ footer {
 }
 
 .participants-list {
-  list-style-type: disc;
+  list-style-type: none;
   padding-left: 1.5em;
   margin: 0.2em 0 0.2em 0;
 }
 
 .participant-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  .delete-icon {
+    cursor: pointer;
+    color: #d32f2f;
+    margin-left: 0.5em;
+    font-size: 1.1em;
+    transition: color 0.2s;
+  }
+  .delete-icon:hover {
+    color: #b71c1c;
+  }
   color: #3a4a7a;
   font-size: 0.98em;
   margin-bottom: 0.15em;
